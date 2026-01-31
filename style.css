@@ -1,0 +1,118 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Tribute container styles */
+.tribute-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Header styles */
+.header {
+  background-color: #696b6c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  padding: 2px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #000;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.title h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.title p {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+  text-align: justify;
+
+}
+
+.content h2 {
+  font-family: 'Merriweather', serif;
+  padding: 10px;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #f4f4f9;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.content p:hover {
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .profile-img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .title p {
+    font-size: 1rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
